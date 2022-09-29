@@ -9,7 +9,7 @@
   "id": "2",
   "name": "Squat",
   "img": "https://cdn-icons-png.flaticon.com/512/3143/3143661.png",
-  "time": 60
+  "time": 50
   }, 
   {
   "id": "3",
@@ -21,18 +21,18 @@
   "id": "4",
   "name": "Meditation",
   "img": "https://cdn-icons-png.flaticon.com/512/3048/3048398.png",
-  "time": 60
+  "time": 40
   }, 
   {
   "id": "5",
   "name": "Running",
   "img": "https://cdn-icons-png.flaticon.com/512/3043/3043252.png",
-  "time": 60
+  "time": 70
   }, 
   {
   "id": "6",
   "name": "Pull Ups",
   "img": "https://cdn-icons-png.flaticon.com/512/3043/3043185.png",
-  "time": 60
+  "time": 80
   }
 ]

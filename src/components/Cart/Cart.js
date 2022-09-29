@@ -29,17 +29,20 @@ const Cart = ({ cart }) => {
     <div className="cart">
       <h3>About Me</h3>
       <p>working out is my daily routine</p>
+      <button>72 KG weight</button> <br />
+      <button>5.8ft Height</button> <br />
+      <button>22yrs Age</button>
       <div>
         <h5>Add a break</h5>
-        <button onClick={() => updateTime(20)}>20</button>
-        <button onClick={() => updateTime(30)}>30</button>
-        <button onClick={() => updateTime(40)}>40</button>
-        <button onClick={() => updateTime(50)}>50</button>
-        <button onClick={() => updateTime(60)}>60</button>
+        <button onClick={() => updateTime(20)}>20s</button>
+        <button onClick={() => updateTime(30)}>30s</button>
+        <button onClick={() => updateTime(40)}>40s</button>
+        <button onClick={() => updateTime(50)}>50s</button>
+        <button onClick={() => updateTime(60)}>60s</button>
       </div>
-      <p>Exercise Time: {total}</p>
+      <p>Exercise Time: {total} seconds</p>
       <p>total activity: {cart.length}</p>
-      <p className="break">Break time: {breaktime}</p>
+      <p className="break">Break time: {breaktime} seconds</p>
       <div className="container">
         {/* This button is used to show the toast */}
         <button className="button" onClick={showToast}>
