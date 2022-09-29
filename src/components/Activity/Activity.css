@@ -1,3 +1,9 @@
 h1 {
  text-align: left;
 }
+
+.activity-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 45px;
+}

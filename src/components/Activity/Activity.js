@@ -13,7 +13,7 @@ const Activity = () => {
   return (
     <div>
       <h1>Ultra activity</h1>
-      <div>
+      <div className="activity-container">
         {
           activities.map(activity => <Card key={activity.id} activity={activity}></Card>)
         }

@@ -1,0 +1,39 @@
+.card{
+  width: 170px;
+  height: 380px;
+  border: 1px solid #95A0A7;
+  border-radius: 8px;
+  position: relative;
+}
+
+.activity-info{
+  padding: 8px;
+}
+
+.card img {
+  height: 150px;
+  width: 150px;
+  border-radius: 8px;
+  margin: 7px;
+}
+
+.activity-name{
+  font-family: 'Impact';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 25px;
+}
+
+.btn-activity{
+  width:100%;
+  background: #FFE0B3;
+  border: none;
+  border-radius: 0px 0px 8px 8px;
+  position: absolute;
+  bottom: 0;
+}
+
+.btn-activity:hover {
+  background-color: orange;
+}
