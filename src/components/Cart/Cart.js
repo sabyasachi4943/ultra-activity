@@ -6,7 +6,7 @@ const Cart = ({ cart }) => {
     total = total + activity.time;
   }
 
-  const [breaktime, setBreaktime] = useState('0');
+  const [breaktime, setBreaktime] = useState(localStorage.getItem("breaktime"));
   const [isShown, setIsShown] = useState(false);
 
   // This function is called when the blue button gets clicked
