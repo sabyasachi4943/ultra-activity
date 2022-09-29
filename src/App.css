@@ -1,8 +1,4 @@
 .App {
-  /* display: flex;
-  align-items: center;
-  justify-content: space-between; */
-  margin: 25px;
-  display: grid;
-  grid-template-columns: 4fr 1fr;
+  background: rgba(165, 154, 194, 0.15);
+
 }
