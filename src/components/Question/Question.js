@@ -20,7 +20,19 @@ const Question = () => {
         or props.
       </p>
       <h3>Difference between props & state</h3>
+      <p>
+        props: <br />
+        The Data is passed from one component to another. It is Immutable
+        (cannot be modified). Props can be used with state and functional
+        components. Props are read-only.
+        <br />
+        state: <br />
+        The Data is passed within the component only. It is Mutable ( can be
+        modified). State can be used only with the state components/class
+        component (Before 16.0). State is both read and write.
+      </p>
       <h3>Uses of use effect other than data load</h3>
+      
     </div>
   );
 };
