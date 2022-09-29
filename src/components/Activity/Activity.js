@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Card from "../Card/Card";
+import Cart from "../Cart/Cart";
 import "./Activity.css";
 
 const Activity = () => {
@@ -27,8 +28,7 @@ const Activity = () => {
           ))}
         </div>
         <div className="activity-cart">
-          <h4>activity cart</h4>
-          <p>selected activity: {cart.length}</p>
+            <Cart cart={cart}></Cart>
         </div>
       </div>
     </div>
