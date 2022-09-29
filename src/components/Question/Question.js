@@ -32,7 +32,25 @@ const Question = () => {
         component (Before 16.0). State is both read and write.
       </p>
       <h3>Uses of use effect other than data load</h3>
-      
+      <p>
+        The useEffect function is like the swiss army knife of hooks. It can be
+        used for a ton of things, from setting up subscriptions to creating and
+        cleaning up timers to changing the value of a ref. One thing it's not
+        good for is making DOM changes that are visible to the user. The way the
+        timing works, an effect function will only fire after the browser is
+        done with layout and paint too late, if you wanted to make a visual
+        change. For those cases, React provides the useMutationEffect and
+        useLayoutEffect hooks, which work the same as useEffect aside from when
+        they are fired. Have a look at the docs for useEffect and particularly
+        the section on the timing of effects if you have a need to make visible
+        DOM changes. This might seem like an extra complication. Another thing
+        to worry about. It kinda is, unfortunately. The positive side effect of
+        this (heh) is that since useEffect runs after layout and paint, a slow
+        effect won't make the UI janky. The down side is that if you're moving
+        old code from lifecycles to hooks, you have to be a bit careful, since
+        it means useEffect is almost-but-not-quite equivalent to
+        componentDidUpdate in regards to timing.
+      </p>
     </div>
   );
 };
