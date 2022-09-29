@@ -1,7 +1,7 @@
 import React from "react";
 import './Card.css'
-const Card = (props) => {
-  const { id, name, img, time } = props.activity;
+const Card = ({activity, handleAddToCart}) => {
+  const { id, name, img, time } = activity;
   return (
     <div className='card'>
       <img src={img} alt=""></img>
@@ -10,7 +10,7 @@ const Card = (props) => {
         <p className="activity-name">{name}</p>
         <p>Activity required time: { time} seconds</p>
       </div>
-      <button className="btn-activity">
+      <button onClick={()=>handleAddToCart(activity)} className="btn-activity">
         <p>Add to List</p>
       </button>
 
